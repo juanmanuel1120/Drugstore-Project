@@ -22,7 +22,6 @@ var createDrugstore = (drugstoresName) => {
 }
 
 var createCollection = (name) => {
-	console.log('prueba')
 	return createTables.create('drugstoredb').then((collection) => {
 	   return collection.createCollection(name);
 	})
